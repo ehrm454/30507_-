@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+* {margin: 0; padding: 0;}
+body{}
+.wrap {margin: 0 auto; width: 1280px; height: 1024px;}
+a {text-decoration: none; color:black;}
+header { text-align: left; margin-top:10px; margin-left:10px;}
+header img{hieght:60px; width:150px;}
+section{margin-top:4px;}
+.search{height:49px; width:700px; border: 1px solid black; bacground-color:black;}
+.search input{font-size:16px; width:90%; height:100%; padding 10px; border: 0px; outline: none; float:left;}
+.search button{width:10%;height:100%; border : 0px; outline: none; float:right; color:black;}
+
+.right_first{background-color:#666666; width:100%; height:50px; margin-left:10px; text-align:center;} 
+.right_first .menu { width: 200px; text-align:center;}
+ .menu ul { margin: 0; padding: 0; list-style: none; position:relative; }
+ .menu ul ul{display:none; position:absolute; left:64%; }
+ .menu ul li:hover>ul{display:block; border: 1px solid black; width:100px; background-color:white; }
+ .menu ul li { text-align:center; padding:10px;}
+ .menu ul li a { color: black; text-decoration: none; }
+.menu ul li a:hover { color: #F00; text-decoration: underline; }
+
+.right_second{background-color:#CCCCCC; width:100%; height:500px;; margin-left:10px; text-align:center;}
+
+.option_menu{width:190px; height:30px; float:right; margin-top:9px;}
+
+.table_menu table{width:700px; height:300px; border: 1px solid black; border-collapse:collapse; text-align:center; }
+.table_menu td{padding 10px; border-bottom: 1px solid black;}
+.table_menu button{width:50px; height:30px;}
+</style>
+</head>
+<body>
+<div class="warp">
+ <header>
+	<img src="./img/nslib_logo.png">
+	<hr>
+ </header>
+ 
+ 
+ <section>
+
+<table>
+  <tr style="vertical-align:top">
+    <td style="width:200px; border-right:1px solid black; padding-right:16px; text-align:justify">
+      <div class="right_first"><a style="color:white; font-size:25px;font-weight:15px;text-align:center">메뉴</a></div>
+      <div class="right_second">
+      <div class="menu">
+        <ul>
+            <li><a href="#">메뉴_01</a>
+            <ul>
+         	   <li><a href="#">메뉴_옵션_01</a></li>
+          	   <li><a href="#">메뉴_옵션_01</a></li>
+          	   <li><a href="#">메뉴_옵션_01</a></li>
+           </ul>
+            </li>
+      <li><a href="#">메뉴_02</a>
+            <ul>
+         	   <li><a href="#">메뉴_옵션_02</a></li>
+          	   <li><a href="#">메뉴_옵션_02</a></li>
+          	   <li><a href="#">메뉴_옵션_02</a></li>
+           </ul>
+            </li> <li><a href="#">메뉴_03</a>
+            <ul>
+         	   <li><a href="#">메뉴_옵션_03</a></li>
+          	   <li><a href="#">메뉴_옵션_03</a></li>
+          	   <li><a href="#">메뉴_옵션_03</a></li>
+           </ul>
+            </li>
+        </ul>
+     </div>
+     </div>
+     
+     </td>
+    
+    <td style="padding-left:10px">	
+    	<div class="search">
+ 			<input type="text" placehorder="검색어 입력">
+ 			<button type="button" onclick="alert('검색 완료!')">검색</button>
+ 		</div>
+ 			<div class="option_menu">
+ 						보기 정렬할때 <select>
+  					<option value="옵션-01">옵션_01</option>
+  					<option value="옵션-02">옵션_02</option>
+					<option value="옵션-03">옵션_03</option>
+  					<option value="옵션-04">옵션_04</option>
+								</select>
+			</div>
+			<div class="table_menu">
+				 <table>
+      <thead>
+        <tr>
+          <th>순번</th><th>도서명/색인정보</th><th>대출여부</th> <th>  </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td><td>책_01</td><td>대출중</td><td><button type="button" onclick="alert('선택 완료!')">선택</button></td>
+        </tr>
+        <tr>
+          <td>2</td><td>책_02</td><td>대출가능</td><td><button type="button" onclick="alert('선택 완료!')">선택</button></td>
+        </tr>
+        <tr>
+          <td>3</td><td>책_03</td><td>대출중</td><td><button type="button" onclick="alert('선택 완료!')">선택</button></td>
+        </tr>
+        <tr>
+          <td>4</td><td>책_04</td><td>대출가능</td><td><button type="button" onclick="alert('선택 완료!')">선택</button></td>
+        </tr>
+        <tr>
+          <td>5</td><td>책_05</td><td>대출중</td><td><button type="button" onclick="alert('선택 완료!')">선택</button></td>
+        </tr>
+      </tbody>
+    </table>
+			</div>
+ 	</td>
+  </tr>
+</table>
+ </section>
+
+</div>
+</body>
+</html>
