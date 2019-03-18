@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+*{margin:0; padding:0; list-style:none;     text-decoration: none; }
+
+
+header{ width:1280px; height:80px; background-color:#DA3939; text-align:center; color:white; line-height:80px;}
+
+
+.nav{background-color:#F86060; width:1280px; height:50px;}
+.nav ul li{float:left; width:20%; line-height:50px; color:white;  text-align:center;}
+.nav ul li a{ color:white;}
+
+
+section{width:1280px; height:400px; background-color:#FF8484;}
+section h2{text-align:center; line-height:70px;} 
+
+.add_css{width:500px; margin: 0 auto; height:250px;color:black; border: 1px solid white;}
+.add_css table{height:100%;}
+.add_css td{border: 1px solid white; text-align: center;}
+.add_css td:last-child{text-align: center;}
+.add_css tr{border: 1px solid white;}
+.add_css th{border: 1px solid white; color:white;}
+
+.list_css{width:700px; margin: 0 auto; height:auto;;color:black; border: 1px solid white;}
+.list_css table{height:auto;width:700px; color:white;}
+.list_css td{border: 1px solid white; color:white;text-align: center;}
+.list_css td:last-child{text-align: center;}
+.list_css tr{border: 1px solid white;}
+.list_css th{border: 1px solid white; color:white;}
+
+
+footer{width:1280px; height:80px; background-color:#DA3939; color:white;}
+footer h3{text-align:center; line-height:80px;}
